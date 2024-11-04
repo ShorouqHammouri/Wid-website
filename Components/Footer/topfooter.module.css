@@ -5,6 +5,7 @@
   padding: 1%;
   width: 75.694vw;
   height: 62.677vh;
+  min-height: 478px;
   margin: auto;
   background-image: url("../../public/footer/footer.png");
   background-size: 100% 100%;
@@ -34,7 +35,7 @@
 /* start topSection in floating container */
 .topSection {
   width: 100%;
-  height: 100%;
+  height: 60%;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
@@ -68,12 +69,12 @@
 /* start bottom section in floating container */
 .bottomSection {
   width: 100%;
-  height: fit-content;
+  height: 40%;
   margin: auto;
 }
 .buttons {
   width: 90%;
-  margin: auto 0 2vh 0;
+  margin: auto 0 20px 0;
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
