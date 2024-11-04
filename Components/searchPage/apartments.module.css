@@ -1,5 +1,6 @@
 .apartmentSearchPage {
   width: 100%;
+
 }
 .cards {
   display: flex;
@@ -7,6 +8,7 @@
   gap: 20px;
   width: 100%;
   height: fit-content;
+  min-height: 272px;
   justify-content: center;
   align-items: center;
   margin: 10vh auto auto auto;
@@ -16,7 +18,7 @@
 }
 
 .cardAp {
-  margin-bottom: 2vh;
+  margin-bottom: 20px;
   position: relative;
   z-index: 1;
 }
@@ -26,6 +28,7 @@
   width: 85%;
   min-width: fit-content;
   height: 30.065vh;
+  min-height: 233px;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;

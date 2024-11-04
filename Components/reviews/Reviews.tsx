@@ -5,7 +5,7 @@ import styles from "./reviews.module.css";
 import axios from "axios";
 import Image from "next/image";
 import { OrbitProgress } from "react-loading-indicators";
-
+import userSvg from "./user.svg";
 interface User {
   id: string;
   firstName: string;
@@ -64,11 +64,11 @@ export default function Reviews(props: Props) {
     const fetchReviews = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:3000/v1/apartments/${props.id}/reviews?page=${page}&limit=${limit}`
+          `${process.env.NEXT_PUBLIC_BACKENDAPI}/v1/apartments/${props.id}/reviews?page=${page}&limit=${limit}`
         );
         setReviews(response.data);
         setLoading(false);
-      } catch (err: any) {
+      } catch (err) {
         setError(`Failed to fetch data: ${err?.message}`);
         setLoading(false);
       }
@@ -89,12 +89,16 @@ export default function Reviews(props: Props) {
         reviews.map((review) => (
           <div key={review.id} className={styles.reviewCard}>
             <div className={styles.reviewCardImg}>
-              <Image
-                width={100}
-                height={100}
-                src={review.User.avatar}
-                alt="profile"
-              />
+              {review.User.avatar ? (
+                <Image
+                  width={100}
+                  height={100}
+                  src={review.User.avatar}
+                  alt="p"
+                />
+              ) : (
+                <Image width={100} height={100} src={userSvg} alt="p" />
+              )}
             </div>
             <div className={styles.reviewCardSection}>
               <div className={styles.reviewCardInfo}>

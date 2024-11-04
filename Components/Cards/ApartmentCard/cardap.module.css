@@ -1,6 +1,7 @@
 .cardAp {
   width: 86.111vw;
   height: 35.097vh;
+  min-height: 272.5px;
   background-color: #fff;
   margin: auto;
   display: flex;
@@ -35,6 +36,7 @@
 .image {
   width: 100%;
   height: 35.097vh;
+  min-height: 272.5px;
   overflow: hidden;
 }
 
@@ -56,6 +58,7 @@
 .cardActions {
   width: 68%;
   height: 35.097vh;
+  min-height: 272.5px;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -64,6 +67,7 @@
 .cardDesc {
   width: 100%;
   height: 50%;
+  margin-top: 10px;
   display: flex;
   justify-content: space-between;
 }

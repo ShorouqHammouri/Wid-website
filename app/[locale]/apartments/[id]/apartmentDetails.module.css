@@ -119,7 +119,7 @@
 .galleryContainer {
   grid-column: 1 / span 12;
   grid-row: 5 / span 4;
-  margin-top: 5vh;
+  margin-top: 25px;
 }
 
 /* bottom section */
@@ -286,6 +286,7 @@
 .locationContainer .locationMap iframe {
   width: 85.556vw;
   height: 40vh;
+  min-height: 530px;
 }
 .gmapButton {
   background: var(--green);
@@ -319,6 +320,7 @@
 .amenitiesContainer {
   width: 100%;
   height: 100%;
+  min-height: fit-content;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -450,5 +452,8 @@
   }
   .reviewContainer {
     width: 92%;
+  }
+  .locationContainer .locationMap iframe {
+    min-height: 250px;
   }
 }

@@ -81,7 +81,6 @@ export default async function HomePage() {
       <section className={`${styles.homePage}`}>
         <ApartmentsPage />
         <main className={styles.main}>
-          {/* about */}
           <AboutHome />
 
           {/* Top Rated Section */}
@@ -104,7 +103,7 @@ export default async function HomePage() {
               width: "100vw",
               marginBottom: "10vh",
               marginTop: "10vh",
-              minHeight: "auto",
+              minHeight: "150px",
             }}
             className={locale === "ar" ? "rtl" : "ltr"}
           >

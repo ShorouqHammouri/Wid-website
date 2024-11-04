@@ -25,13 +25,14 @@ body {
 .g-container {
   margin: auto;
   width: 100vw;
-  min-height: max-content;
-  min-height: 100vh;
+  /* min-height: max-content; */
+  min-height: 600px;
   background: var(--background);
 }
 .g-mosaic-header {
   width: 100%;
   height: 45vh;
+  min-height: 350px;
   position: relative;
   z-index: 0;
   background-color: var(--green);

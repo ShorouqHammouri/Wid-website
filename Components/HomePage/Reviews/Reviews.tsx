@@ -30,7 +30,7 @@ export default async function Reviews() {
       <>
         <div key={index} className={styles.card}>
           <div key={index} className={styles.subCard}>
-            <div>
+            <div className={styles.textSection}>
               <h4 className={styles.name}>{item.Apartment.ApartmentName}</h4>
               <p className={styles.review}>{item.review}</p>
               <div className={styles.starSection}>
