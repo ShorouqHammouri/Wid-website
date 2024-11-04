@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import React from "react";
 import Image from "next/image";
 import contact from "@/public/HomePage/contact.png";
@@ -24,7 +25,7 @@ export default async function contactPage() {
       );
 
       return res?.data || null;
-    } catch (err) {
+    } catch (err : any) {
       console.log(err?.message);
     }
   };
