@@ -1,0 +1,28 @@
+.title {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 41.6px;
+  text-align: left;
+  color: var(--background);
+}
+.breadcrumbUl {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  margin-top: 2vh;
+}
+
+.breadcrumbLi {
+  display: flex;
+  align-items: center;
+}
+.breadcrumbLink {
+  text-decoration: none;
+  color: var(--background);
+  font-size: 16px;
+  cursor: pointer;
+}

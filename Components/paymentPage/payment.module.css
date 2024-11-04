@@ -1,0 +1,389 @@
+/* payment card container */
+.paymentCard {
+  margin: auto;
+  width: 86%;
+  height: fit-content;
+  max-width: 90.455vw;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.5fr auto;
+  gap: 16px;
+  grid-template-areas:
+    "image"
+    "cards";
+}
+/* image section */
+.paymentCardImage {
+  grid-area: image;
+  margin: auto;
+  width: 100%;
+  height: 40vh;
+}
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* start cards styling */
+.cardsSection {
+  grid-area: cards;
+  width: 100%;
+  align-items: start;
+  justify-items: start;
+  height: fit-content;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  grid-template-rows: minmax(100px, auto);
+  gap: 16px;
+  align-items: start;
+  grid-template-areas:
+    "card1 card2"
+    "visa pay";
+}
+
+/* start room details styling */
+
+.detailsSection {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+.detailsCard {
+  grid-area: card1;
+  width: 100%;
+  height: fit-content;
+  margin: 0;
+  padding: 32px 24px;
+  background: #fff;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+.detailsCard .roomDetails {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.667vw;
+  margin: auto;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.detailsCard .roomDetails .roomDescription {
+  font-size: 20px;
+  width: 60%;
+}
+.detailsCard .roomDetails .roomDetailsPrice {
+  display: flex;
+  align-items: flex-end;
+  color: var(--peach);
+}
+.detailsCard .roomDetails .roomDetailsPrice p {
+  font-size: clamp(16px, 4vw, 20px);
+  line-height: 24.38px;
+  font-weight: 600;
+}
+.detailsCard .roomDetails .roomDetailsPrice span {
+  font-size: clamp(10px, 4vw, 14px);
+}
+
+.detailsCard .locationDetails {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 24px;
+  margin: auto;
+  font-weight: 600;
+  border: 1px solid var(--lightGreen);
+  padding: 12px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+.detailsCard .locationDetails .hotelLogo {
+  width: 63px;
+  height: 63px;
+  object-fit: cover;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+.detailsCard .locationDetails .hotelLogo .image {
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+
+.detailsCard .locationDetails .hotelLocation .hotelName {
+  font-size: clamp(12px, 4vw, 24px);
+  line-height: 24.38px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: var(--notBlack);
+}
+.detailsCard .locationDetails .hotelLocation .hotelLocationPin {
+  font-size: clamp(8px, 4vw, 14px);
+  opacity: 75%;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  line-height: 17px;
+  font-weight: 500;
+  margin-bottom: 4px;
+  color: var(--notBlack);
+  margin-top: 8px;
+}
+
+.detailsCard .bookingTime {
+  font-size: clamp(8px, 4vw, 14px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* flex-wrap: wrap; */
+  margin-top: 40px;
+}
+.detailsCard .noBookingTime {
+  border: 0.5px solid var(--lightGreen);
+  width: 100%;
+  height: fit-content;
+  margin-top: 40px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.detailsCard .bookingTime .bookingCheckDate {
+  color: #000;
+  font-weight: 600;
+  font-size: clamp(10px, 4vw, 20px);
+  line-height: 25px;
+  text-align: center;
+}
+.detailsCard .bookingTime .bookingCheck {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.detailsCard .bookingTime .bookingCheck .bookingP {
+  font-weight: 500;
+  font-size: clamp(8px, 4vw, 14px);
+  opacity: 60%;
+}
+.detailsCard .bookingTime .bookingLogo {
+  font-size: clamp(24px, 4vw, 48px);
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+.detailsCard .bookingTime .bookingLogo::after,
+.detailsCard .bookingTime .bookingLogo::before {
+  content: "";
+  width: 30%;
+  height: 2px;
+  background: #000;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+/* end  */
+/* START VISA */
+.visa {
+  grid-area: visa;
+  width: 100%;
+  padding: 16px;
+  background: #fff;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+.pay {
+  grid-area: pay;
+  width: 100%;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+
+/* start bill checkout styling */
+
+/* start room bill details */
+
+.chechoutCard {
+  grid-area: card2;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 16px;
+  background: #fff;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+.noDate{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  font-weight: 600;
+  font-size: clamp(8px, 4vw, 14px);
+}
+
+.chechoutCardRoom .roomOwner {
+  width: 75%;
+  font-size: clamp(6px, 4vw, 12px);
+  line-height: 19.5px;
+  font-weight: 500;
+  color: var(--notBlack);
+}
+.chechoutCardRoom .roomDetails {
+  width: 85%;
+  font-size: clamp(8px, 4vw, 14px);
+  line-height: 24.38px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+.chechoutCardRoom .roomRating {
+  width: 75%;
+  font-size: clamp(8px, 4vw, 14px);
+  line-height: 19.5px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+.chechoutCardRoom .roomRating .roomRate {
+  border: 1px solid var(--lightGreen);
+  padding: 2px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+.chechoutCardRoom .roomRating .roomRateDetail {
+  font-size: clamp(6px, 4vw, 12px);
+}
+.chechoutCardRoom .roomRating .roomRateDetail .roomRateEVGP {
+  font-weight: 700;
+}
+.chechoutCardRoom .roomProtection {
+  width: 100%;
+  font-size: clamp(8px, 4vw, 16px);
+  line-height: 20px;
+  font-weight: 500;
+  padding: 6px 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.25);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+/* start bill */
+
+.chechoutCardBill {
+  width: 100%;
+  height: 100%;
+  margin-top: 16px;
+  font-size: clamp(8px, 4vw, 16px);
+  line-height: 20px;
+  font-weight: 500;
+}
+.chechoutCardBill .chechoutBillHeader {
+  width: 100%;
+  font-weight: 700;
+  margin-bottom: 19px;
+}
+.chechoutCardBill .chechoutBill ul {
+  width: 100%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+}
+.chechoutCardBill .chechoutBill ul li {
+  width: 100%;
+  font-size: 14px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.chechoutCardBill .chechoutBill ul li p {
+  font-weight: 500;
+  line-height: 19.5px;
+}
+.chechoutCardBill .chechoutBill ul li span {
+  font-weight: 600;
+  line-height: 19.5px;
+}
+.chechoutCardBill .chechoutBill ul .chechoutBillTotal {
+  padding: 8px 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.25);
+}
+/* end bill checkout styling */
+
+@media (min-width: 150px) and (max-width: 770px) {
+  .paymentCard {
+    width: 92%;
+    overflow-y: hidden;
+    margin: auto;
+  }
+  .cardsSection {
+    grid-area: cards;
+    margin: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 16px;
+    grid-template-areas:
+      "card1"
+      "card2"
+      "visa"
+      " pay";
+  }
+  .visa {
+    grid-area: visa;
+    margin-top: 0px;
+    margin: auto;
+    width: 100%;
+    padding: 16px;
+    background: #fff;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+  }
+}

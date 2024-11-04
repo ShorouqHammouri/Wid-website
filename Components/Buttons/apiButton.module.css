@@ -1,0 +1,42 @@
+.favorite {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--lightGreen);
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+}
+
+.favorite:hover {
+  border: 1px solid var(--lightGreen);
+  background-color: var(--green);
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+}
+
+.favorite:hover svg {
+  color: #fff;
+  fill: #fff;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+}
+.added {
+  background-color: var(--lightGreen);
+}

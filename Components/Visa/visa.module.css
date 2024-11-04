@@ -1,0 +1,33 @@
+.visa{
+    width: 100%;
+    margin: auto;
+}
+.visaForm {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 16px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+.visaDetails {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+}
+.visaData {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+}

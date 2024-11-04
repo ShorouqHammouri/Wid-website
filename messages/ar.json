@@ -1,0 +1,71 @@
+{
+  "HomePage": {
+    "title": "عننا",
+    "about": "نحن نساعدك في العثور على منزل الاحلام الخاص بك",
+    "topRatedTitle": "الاعلى تقييم",
+    "suggestedTitle": "الاقتراحات",
+    "reviewsTitle": "اراء سابقة"
+  },
+  "SearchPage": {
+    "title": "ابحث عن إقامة",
+    "search": "بحث",
+    "loading": "جاري التحميل..",
+    "city": "المدينة",
+    "district": "الحي",
+    "date": "اختر التاريخ",
+    "selectDate": "اختر تاريخًا",
+    "selectCity": "اختر المدينة",
+    "selectDistrict": "اختر الحي",
+    "apply": "تطبيق",
+    "startingFrom": "يبدا من",
+    "night": "الليلة",
+    "view": "عرض"
+  },
+
+  "About": {
+    "whyUs": "لماذا تختارنا؟",
+    "enjoy": "استمتع بخدمتنا الممتازة",
+    "services": "نقدم خدمات متنوعة",
+    "customerSupport": "دعم العملاء على مدار الساعة",
+    "customerSupportText": "نقدم دعمًا على مدار 24 ساعة طوال أيام الأسبوع",
+    "trusted": "تقييمات موثوقة",
+    "trustedText": "لدينا أكثر من 1000 تقييم حقيقي",
+    "exceptional": "عقارات استثنائية",
+    "exceptionalText": "لدينا أكثر من 1000 عقار استثنائي"
+  },
+
+  "Header": {
+    "HOME": "الرئيسة",
+    "ABOUT": "عننا",
+    "APARTMENTS": "الشقق",
+    "CONTACT": "تواصل معنا",
+    "LOGIN": "تسجيل الدخول",
+    "SIGNUP": "انشاء حساب",
+    "HISTORY": "السجل"
+  },
+  "Buttons": {
+    "bookNow": "حجز الان"
+  },
+  "Payment": {
+    "title": "تفاصيل الدفع",
+    "payNow": "ادفع الان",
+    "paymentError": "هناك خطأ في عملية الدفع. الرجاء المحاولة مرة اخرى",
+    "paymentSuccess": "تمت عملية الدفع بنجاح",
+    "paymentFailed": "عذرا، فشل الدفع. الرجاء المحاولة مرة اخرى",
+    "paymentDone": "تمت عملية الدفع بنجاح",
+    "paymentPending": "تمت عملية الدفع بنجاح",
+    "paymentCanceled": "تم الغاء عملية الدفع"
+  },
+  "Footer": {
+    "rights": "جميع الحقوق محفوظة",
+    "company": "الشركة",
+    "know": "تعرف علينا",
+    "terms": "شروط الخدمة",
+    "privacy": "سياسة الخصوصية",
+    "faq": "الاسئلة المتكررة",
+    "contact": "تواصل معنا",
+    "follow": "تابعنا",
+    "about": "عننا",
+    "apartments": "الشقق"
+  }
+}

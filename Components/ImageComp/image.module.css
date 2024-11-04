@@ -1,0 +1,12 @@
+.image {
+  width: 100%;
+  max-width: 100%;
+  /* height: 100%; */
+  object-fit: cover;
+  z-index: 10000;
+  border-radius: inherit;
+  -webkit-border-radius: inherit;
+  -moz-border-radius: inherit;
+  -ms-border-radius: inherit;
+  -o-border-radius: inherit;
+}

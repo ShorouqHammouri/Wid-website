@@ -1,0 +1,182 @@
+/* floating container download the app */
+.container {
+  overflow: hidden;
+  margin: auto;
+  padding: 1%;
+  width: 75.694vw;
+  height: 62.677vh;
+  margin: auto;
+  background-image: url("../../public/footer/footer.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  transform: translateY(15%);
+  -webkit-transform: translateY(15%);
+  -moz-transform: translateY(15%);
+  -ms-transform: translateY(15%);
+  -o-transform: translateY(15%);
+}
+.subContainer {
+  width: 60%;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  padding: 2%;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+/* start topSection in floating container */
+.topSection {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 0 auto;
+}
+
+.textContainer {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.textContainer h2 {
+  font-size: clamp(24px, 4vw, 48px);
+  line-height: clamp(20px, 4vw, 48px);
+  font-weight: 800;
+  color: var(--green);
+}
+
+.textContainer p {
+  margin-top: 18px;
+  font-size: clamp(10px, 4vw, 18px);
+  font-weight: 400;
+  line-height: clamp(14px, 4vw, 28px);
+  width: 100%;
+  color: var(--green);
+}
+/* start bottom section in floating container */
+.bottomSection {
+  width: 100%;
+  height: fit-content;
+  margin: auto;
+}
+.buttons {
+  width: 90%;
+  margin: auto 0 2vh 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.buttons a {
+  padding: 20px;
+  width: 100%;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto 0;
+  gap: 3px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.appStore,
+.googlePlay {
+  background-color: var(--green);
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+}
+.getLogo {
+  font-size: 40px;
+  width: 30%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.getText {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.googlePlay .getStore,
+.appStore .getStore {
+  font-size: clamp(14px, 4vw, 20px);
+  font-weight: 600;
+  line-height: 29.26px;
+}
+.appStore:hover,
+.googlePlay:hover {
+  background-color: var(--lightGreen);
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+}
+
+
+@media (min-width: 150px) and (max-width: 770px) {
+  .container {
+    width: 98%;
+    height: fit-content;
+    min-height: fit-content;
+  }
+  .subContainer {
+    width: 80%;
+    height: 100%;
+    padding: 5%;
+    justify-content: center;
+  }
+
+  .textContainer {
+    width: 70%;
+    height: 100%;
+    margin: 0;
+  }
+
+  .bottomSection {
+    width: 60%;
+    height: 100%;
+    margin: 5% 0 0 0;
+  }
+  .bottomSection .buttons {
+    width: 100%;
+    height: 100%;
+
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .bottomSection .buttons a {
+    width: 100%;
+    padding: 1% 5%;
+    font-size: 24px;
+  }
+  .bottomSection .buttons .getText {
+    display: none;
+  }
+  .getLogo {
+    width: 100%;
+  }
+}

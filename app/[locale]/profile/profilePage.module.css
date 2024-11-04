@@ -1,0 +1,9 @@
+.profileContainer {
+  width: 86%;
+  margin: auto;
+}
+@media (min-width: 150px) and (max-width: 770px) {
+  .profileContainer {
+    width: 92%;
+  }
+}

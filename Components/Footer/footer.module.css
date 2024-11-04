@@ -1,0 +1,262 @@
+/* all footer */
+.allFooter {
+  width: 100%;
+  height: fit-content;
+  position: relative;
+  overflow: hidden;
+}
+
+/* start regular footer styling */
+.footer {
+  width: 100%;
+  height: 47.355vh;
+  min-height: min-content;
+  padding: 2%;
+  padding-top: 7.75vh;
+  background-color: var(--green);
+  color: white;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  grid-template-rows: auto;
+  gap: 12px;
+  grid-template-areas:
+    "logo comp know"
+    "follow"
+    "rights contact";
+}
+
+.logoContainer {
+  grid-area: logo;
+  grid-column: 1 / span 3;
+  grid-row: 1 / span 2;
+  width: 100%;
+}
+
+.logo {
+  margin-bottom: 0.5vh;
+}
+.logoF {
+  width: 50%;
+  height: auto;
+}
+.logoContainer p {
+  font-size: clamp(10px, 4vw, 14px);
+  line-height: 18px;
+  font-weight: 400;
+  word-spacing: 3px;
+}
+.footerCompanyLinks {
+  grid-area: comp;
+  grid-column: 4 / span 2;
+  grid-row: 1 / span 2;
+}
+.footerKnowLinks {
+  grid-area: know;
+  grid-column: 6 / span 2;
+  grid-row: 1 / span 2;
+}
+.footerKnowLinks h4,
+.footerCompanyLinks h4 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.footerKnowLinks ul,
+.footerCompanyLinks ul {
+  height: 80%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  margin: 0 auto;
+  gap: 8px;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.footerKnowLinks li,
+.footerCompanyLinks li {
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+}
+.footerKnowLinks li:hover,
+.footerCompanyLinks li:hover {
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transform: translateX(2px);
+  -webkit-transform: translateX(2px);
+  -moz-transform: translateX(2px);
+  -ms-transform: translateX(2px);
+  -o-transform: translateX(2px);
+}
+
+.footerKnowLinks a,
+.footerCompanyLinks a {
+  color: white;
+  text-decoration: none;
+}
+
+.follow {
+  grid-area: follow;
+  grid-column: 1 / 12;
+  grid-row: 3 / span 2;
+  grid-row-start: 3;
+  height: 100%;
+  text-align: right;
+  padding-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  border-bottom: 1px solid #d2ecee;
+}
+.follow p {
+  font-size: 24px;
+  font-weight: 600;
+}
+.follow a {
+  font-size: 22px;
+  font-weight: 600;
+  text-decoration: none;
+  color: white;
+  margin: 0;
+}
+.followIcons {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  gap: 1vw;
+  flex-wrap: wrap;
+}
+
+.copyRights {
+  grid-area: rights;
+  grid-column: 1 / span 4;
+  /* grid-row-start: 5; */
+  grid-row: 5 / span 1;
+  height: 100%;
+}
+.contactInfo {
+  grid-area: contact;
+  grid-column: 8 / span 5;
+  grid-row: 5 / span 1;
+  height: 100%;
+  justify-content: center;
+}
+
+.contactInfo p {
+  margin: 0 0 auto auto;
+}
+
+@media (min-width: 150px) and (max-width: 770px) {
+  /* lower footer style responsive */
+
+  .footer {
+    padding: 10px;
+    padding-top: 100px;
+    grid-template-areas:
+      "logo"
+      "comp know"
+      "follow"
+      "rights"
+      "contact";
+  }
+
+  .logoContainer {
+    grid-area: logo;
+    margin: 0;
+    grid-column: 1 / span 8;
+    grid-row: 1 / span 2;
+    max-width: 100%;
+  }
+
+  .logo {
+    margin-bottom: 2px;
+  }
+  .logoF {
+    width: 60%;
+  }
+  .footerCompanyLinks {
+    grid-area: comp;
+    grid-column: 1 / span 3;
+    grid-row: 3 / span 1;
+  }
+  .footerKnowLinks {
+    grid-area: know;
+    grid-column: 5 / span 4;
+    grid-row: 3 / span 1;
+    /* border-top: #d2ecee 1px solid; */
+  }
+
+  .footerKnowLinks h4,
+  .footerCompanyLinks h4 {
+    font-size: 16px;
+  }
+
+  .follow {
+    grid-area: follow;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: auto;
+    gap: 10px;
+    flex-direction: column;
+    grid-column: 9 / span 4;
+    grid-row: 3 / span 1;
+    grid-row-start: 3;
+    padding-bottom: 0px;
+    border-bottom: 0px;
+  }
+
+  .follow p {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .follow .followIcons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  .follow a {
+    font-size: 18px;
+
+    margin: 0 0.5vw;
+  }
+
+  .copyRights {
+    grid-area: rights;
+    grid-column: 1 / span 12;
+    grid-row-start: 5;
+    grid-row: 5 / span 1;
+    margin: 2vh 0;
+    text-align: center;
+  }
+  .contactInfo {
+    grid-area: contact;
+    width: 100%;
+    height: fit-content;
+    grid-column: 1 / span 12;
+    grid-row-start: 4;
+    grid-row: 4 / span 1;
+    margin: 2vh 0;
+    padding: 2vh 0;
+    border-bottom: 1px solid #d2ecee;
+    border-top: 1px solid #d2ecee;
+  }
+
+  .contactInfo p {
+    margin: 0;
+    font-size: 13px;
+  }
+}

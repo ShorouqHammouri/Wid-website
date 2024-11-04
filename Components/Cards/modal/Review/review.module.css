@@ -1,0 +1,9 @@
+.reviewModal {
+  width: 50vw;
+  height: 50vh;
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}

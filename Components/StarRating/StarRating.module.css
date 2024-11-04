@@ -1,0 +1,23 @@
+/* components/StarRating.module.css */
+.starSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: inherit;
+  align-items: inherit;
+
+  gap: clamp(4px, 4vw, 10px);
+  width: 100%;
+  height: 100%;
+}
+.starRating {
+  display: flex;
+  flex-direction: row;
+  justify-content: inherit;
+  align-items: inherit;
+  gap: 1px;
+  height: 50%;
+}
+
+.star {
+  transition: color 0.2s;
+}

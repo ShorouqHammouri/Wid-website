@@ -1,0 +1,69 @@
+{
+  "HomePage": {
+    "title": "About us",
+    "about": "We assist you in finding your dream homes.",
+    "topRatedTitle": "TOP RATED",
+    "suggestedTitle": "SUGGESTED RENTALS",
+    "reviewsTitle": "REVIEWS"
+  },
+  "SearchPage": {
+    "title": "Find stay",
+    "search": "Search",
+    "loading": "Loading..",
+    "city": "CITY",
+    "district": "DISTRICT",
+    "date": "CHOOSE DATE",
+    "selectDate": "Select a date",
+    "selectCity": "Select city",
+    "selectDistrict": "Select district",
+    "apply": "Apply",
+    "startingFrom": "Starting from",
+    "night": "night",
+    "view": "View Place"
+  },
+  "About": {
+    "whyUs": "Why Choose Us?",
+    "enjoy": "Enjoy Our Excellent Service",
+    "services": "We offer various services",
+    "customerSupport": "24/7 Customer Support",
+    "customerSupportText": "We offer 24 hours support during all week",
+    "trusted": "Trusted Reviews",
+    "trustedText": "We have 1000+ real reviews",
+    "exceptional": "Exceptional Properties",
+    "exceptionalText": "We have 1000+ exceptional properties"
+  },
+  "Header": {
+    "HOME": "HOME",
+    "ABOUT": "ABOUT",
+    "APARTMENTS": "APARTMENTS",
+    "CONTACT": "CONTACT",
+    "LOGIN": "LOGIN",
+    "SIGNUP": "SIGNUP",
+    "HISTORY": "HISTORY"
+  },
+  "Buttons": {
+    "bookNow": "BOOK NOW"
+  },
+  "Payment": {
+    "title": "Price Details",
+    "payNow": "ادفع الان",
+    "paymentError": "هناك خطأ في عملية الدفع. الرجاء المحاولة مرة اخرى",
+    "paymentSuccess": "تمت عملية الدفع بنجاح",
+    "paymentFailed": "عذرا، فشل الدفع. الرجاء المحاولة مرة اخرى",
+    "paymentDone": "تمت عملية الدفع بنجاح",
+    "paymentPending": "تمت عملية الدفع بنجاح",
+    "paymentCanceled": "تم الغاء عملية الدفع"
+  },
+  "Footer": {
+    "rights": " All Rights Reserved",
+    "company": "COMPANY",
+    "know": "KNOW MORE",
+    "terms": "terms & conditions ",
+    "privacy": " privacy policy",
+    "faq": "FAQs ",
+    "contact": " contact us",
+    "follow": "FOLLOW",
+    "about": "About Us",
+    "apartments": "Apartments"
+  }
+}

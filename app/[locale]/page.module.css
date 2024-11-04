@@ -1,0 +1,192 @@
+.homePage {
+  transform: translateY(-2%);
+  -webkit-transform: translateY(-2%);
+  -moz-transform: translateY(-2%);
+  -ms-transform: translateY(-2%);
+  -o-transform: translateY(-2%);
+}
+.main {
+  min-height: 100vh;
+  width: 86%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+/* top rated */
+.topRated {
+  width: 100%;
+  height: 65.806vh;
+  margin: 10vh auto;
+}
+
+.topRatedHeader {
+  width: 100%;
+  min-height: calc(100% - 54.194vh);
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1vh;
+}
+.topRatedHeader .Textheader {
+  font-size: clamp(14px, 4vw, 24px);
+  font-weight: 600;
+  line-height: 29.26px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.topRatedHeader .Textheader::before {
+  content: "";
+  width: 5.625vw;
+  height: 0.387vh;
+  display: inline-block;
+  background-color: var(--green);
+  margin-right: 1.29vh;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+.topRatedHeader .TextBody {
+  font-size: clamp(14px, 4vw, 16px);
+  font-weight: 500;
+  line-height: clamp(17px, 4vw, 19.5px);
+  height:auto;
+  margin-bottom: 4vh;
+  
+}
+.topRatedHeader .TextBody::before {
+  content: "";
+  width: 5.625vw;
+  display: inline-block;
+  margin-right: 1.29vh;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+
+.topRatedCarousel {
+  height: 54.194vh;
+}
+
+/* suggested */
+.suggested {
+  width: 100%;
+  min-height: 89.935vh;
+  margin-bottom: 10vh;
+}
+.suggestedHeader {
+  width: 100%;
+  height: calc(100% - 83.226vh);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 5vh;
+}
+.suggestedHeader .Textheader {
+  font-size: clamp(14px, 4vw, 24px);
+  font-weight: 600;
+  line-height: 29.26px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.suggestedHeader .Textheader::before {
+  content: "";
+  width: 5.625vw;
+  height: 0.387vh;
+  display: inline-block;
+  background-color: var(--green);
+  margin-right: 1.29vh;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+.suggestedHeader .TextBody {
+  font-size: clamp(14px, 4vw, 16px);
+  font-weight: 400;
+  line-height: clamp(17px, 4vw, 19.5px);
+}
+.suggestedHeader .TextBody::before {
+  content: "";
+  width: 5.625vw;
+  display: inline-block;
+  margin-right: 1.29vh;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+
+.suggestedCarousel {
+  height: 72vh;
+}
+/* review */
+.reviews {
+  width: 100%;
+  min-height: 81.581vh;
+  margin-bottom: 10vh;
+}
+.reviewsHeader {
+  width: 100%;
+  height: calc(100% - 69.097vh);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 5vh;
+}
+.reviewsHeader .Textheader {
+  font-size: clamp(16px, 4vw, 24px);
+  font-weight: 600;
+}
+.reviewsHeader .Textheader::before {
+  content: "";
+  width: 5.625vw;
+  height: 0.387vh;
+  display: inline-block;
+  background-color: var(--green);
+  margin-right: 1.29vh;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+.reviewsHeader .TextBody {
+  font-size: clamp(14px, 4vw, 16px);
+  font-weight: 400;
+  line-height: clamp(17px, 4vw, 19.5px);
+}
+
+.reviewsCarousel {
+  height: 69.097vh;
+  
+}
+/* nedia query */
+@media (min-width: 150px) and (max-width: 770px) {
+  .main {
+    width: 92%;
+    margin: auto;
+  }
+}

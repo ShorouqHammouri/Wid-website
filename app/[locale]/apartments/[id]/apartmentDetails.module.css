@@ -1,0 +1,454 @@
+/* content */
+.cardActions {
+  width: 85.5%;
+  height: fit-content;
+  padding: 20px;
+  margin: auto;
+}
+.cardDesc {
+  width: 100%;
+  height: 50%;
+  display: grid;
+  margin: auto;
+  grid-template-columns: repeat(12, auto);
+  grid-template-rows: auto;
+}
+/* name */
+.name {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 1;
+  width: 100%;
+}
+.name p {
+  font-size: clamp(10px, 4vw, 20px);
+  font-weight: 700;
+  padding: 0;
+}
+/* address */
+.address {
+  grid-column: 1 / span 1;
+  grid-row: 2 / span 1;
+}
+.address p {
+  font-size: clamp(6px, 4vw, 12px);
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: clamp(4px, 4vw, 10px);
+}
+/* rating */
+.rating {
+  grid-column: 3 / span 1;
+  grid-row: 1 / span 1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+  margin: auto;
+}
+.rating svg {
+  width: 15%;
+}
+
+/* reviews + num */
+.roomReviews {
+  width: 100%;
+  font-size: clamp(6px, 4vw, 14px);
+  line-height: 19.5px;
+  font-weight: 500;
+  grid-column: 1 / span 1;
+  grid-row: 3 / span 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+/* price/night */
+.roomPrice {
+  width: 100%;
+  height: 100%;
+  grid-column: 12 / span 1;
+  grid-row: 1 / span 1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+.roomDetailsPrice {
+  display: flex;
+  align-items: flex-end;
+  color: var(--peach);
+}
+.roomDetailsPrice p {
+  font-size: clamp(14px, 4vw, 32px);
+  font-weight: 700;
+}
+.roomDetailsPrice span {
+  font-size: 14px;
+}
+/*  */
+
+/* start text styles */
+/* end text styles */
+.cardButtons {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  gap: 10px;
+  position: relative;
+  grid-column: 9 / span 4;
+  grid-row: 3 / span 1;
+}
+
+.apiBtn {
+  width: 20%;
+  height: 100%;
+}
+.viewBtn {
+  font-size: clamp(10px, 4vw, 16px);
+  width: 20vw;
+  height: 100%;
+  margin-bottom: 0;
+  margin-top: auto;
+}
+
+/* image */
+.galleryContainer {
+  grid-column: 1 / span 12;
+  grid-row: 5 / span 4;
+  margin-top: 5vh;
+}
+
+/* bottom section */
+/* text */
+.bottomSection {
+  width: 85.5%;
+  height: fit-content;
+  min-height: 100vh;
+  padding: 20px;
+  margin: auto;
+}
+.textContainer h4 {
+  font-size: clamp(12px, 4vw, 24px);
+  font-weight: 600;
+  line-height: 29.26px;
+  text-align: left;
+  margin-bottom: 2vh;
+}
+.textContainer p {
+  font-size: clamp(10px, 4vw, 16px);
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
+
+/* cards */
+.cardContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  gap: 20px;
+  margin: 50px auto;
+  padding-bottom: 20px;
+}
+.card {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 1.5%;
+  background: linear-gradient(135.27deg, #4f8f92 -8.06%, #014751 112.41%);
+  box-shadow: 24px 30px 51px 0px #0000000d;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+}
+.card .cardHeader {
+  font-size: clamp(8px, 4vw, 20px);
+  font-weight: 600;
+  line-height: 24.38px;
+  letter-spacing: 1px;
+  color: #fff;
+  text-align: left;
+  align-self: flex-start;
+  justify-self: flex-start;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+}
+.card .rateCardComp {
+  font-size: clamp(8px, 4vw, 16px);
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 1px;
+  color: #fff;
+  text-align: left;
+  align-self: flex-start;
+  justify-self: flex-start;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+}
+.card .reviewCardComp {
+  font-size: clamp(8px, 4vw, 14px);
+  font-weight: 500;
+  line-height: 17px;
+  letter-spacing: 1px;
+  color: #fff;
+  text-align: left;
+  align-self: flex-start;
+  justify-self: flex-start;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+}
+.card svg {
+  width: 55px !important;
+  height: 55px !important;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+}
+.card:hover {
+  background: linear-gradient(135.27deg, #a1a1a167 -8.06%, #383939 112.41%);
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+}
+.card:hover p {
+  color: #000;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+}
+.card:hover img {
+  filter: brightness(200%);
+  -webkit-filter: brightness(200%);
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+}
+
+/* location */
+.locationContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+.locationHeader {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+}
+.locationHeader h4 {
+  font-size: clamp(12px, 4vw, 24px);
+  font-weight: 600;
+  line-height: 29.26px;
+  text-align: left;
+}
+.locationContainer .locationMap iframe {
+  width: 85.556vw;
+  height: 40vh;
+}
+.gmapButton {
+  background: var(--green);
+  width: fit-content;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  font-size: clamp(8px, 4vw, 16px);
+  font-weight: 700;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+}
+.gmapButton:hover {
+  background: var(--lightGreen);
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+}
+
+.amenitiesContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 50px auto;
+}
+.amenitiesContainer h4 {
+  font-size: clamp(12px, 4vw, 24px);
+  font-weight: 600;
+  line-height: 29.26px;
+  text-align: left;
+}
+
+.reviewContainer {
+  width: 86%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 50px auto;
+}
+.reviewHeader {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.reviewContainer h4 {
+  font-size: clamp(12px, 4vw, 24px);
+  font-weight: 600;
+  line-height: 29.26px;
+  text-align: left;
+}
+
+@media (min-width: 150px) and (max-width: 770px) {
+  .cardActions {
+    width: 92%;
+    padding: 10px;
+    margin: auto;
+    height: fit-content;
+    min-height: max-content;
+  }
+  .cardDesc {
+    width: 100%;
+    height: 50%;
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: auto;
+  }
+  /* name */
+  .name {
+    grid-column: 1 / span 3;
+    grid-row: 1 / span 1;
+    width: 100%;
+  }
+  /* address */
+  .address {
+    grid-column: 1 / span 3;
+    grid-row: 2 / span 1;
+    margin-top: 1vh;
+  }
+  /* rating */
+  .rating {
+    grid-column: 4 / span 1;
+    grid-row: 1 / span 1;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+
+  /* reviews + num */
+  .roomReviews {
+    width: 100%;
+    line-height: 16.5px;
+    font-weight: 400;
+    grid-column: 1 / span 3;
+    grid-row: 4 / span 1;
+    margin-top: 1vh;
+  }
+  /* price/night */
+  .roomPrice {
+    grid-column: 4 / span 1;
+    grid-row: 2 / span 1;
+  }
+  .roomDetailsPrice {
+    display: flex;
+    align-items: flex-end;
+    color: var(--peach);
+  }
+  .roomDetailsPrice p {
+    font-size: clamp(22px, 4vw, 32px);
+    font-weight: 500;
+  }
+  .roomDetailsPrice span {
+    font-size: 14px;
+  }
+  .cardContainer {
+    flex-wrap: wrap;
+  }
+
+  /* image */
+  .galleryContainer {
+    grid-column: 1 / span 5;
+    grid-row: 5 / span 1;
+    margin-top: 0.5vh;
+  }
+  /* start text styles */
+  /* end text styles */
+  .cardButtons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    position: relative;
+    grid-column: 1 / span 5;
+    grid-row: 6 / span 1;
+  }
+
+  .viewBtn {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 0;
+    margin-top: auto;
+  }
+  .reviewContainer {
+    width: 92%;
+  }
+}

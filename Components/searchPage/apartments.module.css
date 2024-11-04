@@ -1,0 +1,450 @@
+.apartmentSearchPage {
+  width: 100%;
+}
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  height: fit-content;
+  justify-content: center;
+  align-items: center;
+  margin: 10vh auto auto auto;
+  padding-bottom: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.cardAp {
+  margin-bottom: 2vh;
+  position: relative;
+  z-index: 1;
+}
+
+/* searchBar Main*/
+.searchBar {
+  width: 85%;
+  min-width: fit-content;
+  height: 30.065vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 10px;
+  margin: auto;
+  padding: 20px;
+  background: linear-gradient(
+      92.71deg,
+      #f1f1f1 1.35%,
+      rgba(255, 255, 255, 0.2) 100%
+    ),
+    linear-gradient(92.71deg, rgba(255, 255, 255, 0.2) 1.35%, #f1f1f1 100%);
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+.searchBarHeader {
+  padding-bottom: 15px;
+  border-bottom: 4px solid var(--green);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.searchBarHeader h4 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: clamp(14px, 4vw, 16px);
+  font-weight: 600;
+  line-height: 19.5px;
+  text-align: left;
+}
+.searchBarHeaderIcon {
+  color: var(--green);
+}
+/* searching area */
+.searchingArea {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.searchingItems {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+/* dates */
+
+/* CustomCalendar.module.css */
+.selectCityArea,
+.selectDistrictArea,
+.selectDateArea {
+  position: relative;
+  /* width: 100%; */
+}
+.selectButton {
+  width: fit-content;
+  border-right: 2px solid var(--green);
+  padding: 10px 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  z-index: 10;
+}
+.selectButton:hover {
+  background-color: rgba(168, 168, 168, 0.096);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+}
+.selectButton p {
+  padding: 10px 20px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+.selectButton p .selectText {
+  font-size: clamp(13px, 4vw, 20px);
+  font-weight: 600;
+}
+.selectButtonIcon {
+  color: var(--green);
+  font-size: clamp(14px, 4vw, 20px);
+}
+
+/* calendar */
+.calendarContainer {
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  z-index: 9999;
+  top: 100%;
+}
+
+.selectionContainer {
+  width: 100%;
+  height: fit-content;
+  overflow: hidden;
+  background-color: #fff;
+  padding: 40px 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  z-index: 9999;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+.selectionContainer ul {
+  list-style: none;
+}
+.selectionContainer ul li {
+  width: 100%;
+  padding: 10px;
+  cursor: pointer;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+}
+.selectionContainer ul li:hover {
+  background-color: rgba(168, 168, 168, 0.096);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+}
+.selectionContainer ul li p {
+  font-size: clamp(10px, 4vw, 16px);
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.listIcon {
+  width: 30%;
+  height: 30%;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+  color: var(--green);
+  background: rgba(128, 128, 128, 0.516);
+  padding: 5px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.rdrMonthAndYearPickers select {
+  font-weight: bold;
+}
+
+.rdrMonthName {
+  font-size: clamp(10px, 4vw, 16px);
+}
+
+.rdrDayNumber span {
+  font-size: clamp(10px, 4vw, 16px);
+}
+
+.rdrDayStartPreview,
+.rdrDayInPreview {
+  background-color: var(--lightGreen); /* Customize range preview */
+}
+
+.rdrDayEndPreview {
+  background-color: var(--lightGreen);
+}
+
+.rdrDayInRange {
+  background-color: rgba(0, 158, 34, 64, 0.2);
+}
+
+.applyButton {
+  width: 100%;
+  background-color: var(--green);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: clamp(10px, 4vw, 16px);
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.searchButton {
+  background-color: var(--green);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: clamp(10px, 4vw, 16px);
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.applyButton:hover {
+  background-color: var(--lightGreen);
+}
+
+@media (min-width: 150px) and (max-width: 1010px) {
+  .selectButton p {
+    text-wrap: wrap;
+  }
+}
+@media (min-width: 150px) and (max-width: 770px) {
+  .searchBar {
+    width: 92%;
+    height: fit-content;
+    margin: auto;
+  }
+  .searchingArea {
+    flex-direction: column;
+    z-index: 10;
+    width: 100%;
+    z-index: 1;
+  }
+  .searchingItems {
+    flex-direction: column;
+    width: 100%;
+  }
+  .selectCityArea,
+  .selectDistrictArea,
+  .selectDateArea {
+    position: inherit;
+    width: 100%;
+  }
+  .selectButton {
+    width: 100%;
+    padding: 0;
+  }
+  .cardContainer {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+  }
+  .selectionContainer {
+    left: 50%;
+    top: 0;
+    width: 80%;
+    margin: auto;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+  }
+  .listIcon {
+    width: 15%;
+    height: 15%;
+    font-weight: 400;
+  }
+  .calendarContainer {
+    left: 50%;
+    top: 0;
+    width: 92%;
+    margin: auto;
+    padding: 1%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+  }
+  .calendarContainer div {
+    width: 100%;
+    margin: auto;
+  }
+  .calendarContainer div select {
+    width: 100%;
+    margin: auto;
+  }
+  .searchButton {
+    width: 100%;
+  }
+  .cardDesc {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+  }
+}
+
+/* loader */
+
+.loader {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  background: transparent;
+  border-radius: 50%;
+  box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.55);
+  border: 1px solid #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.loader::before {
+  content: "";
+  position: absolute;
+  inset: 20px;
+  background: transparent;
+  border: 1px dashed#444;
+  border-radius: 50%;
+  box-shadow: inset -5px -5px 25px rgba(0, 0, 0, 0.25),
+    inset 5px 5px 35px rgba(0, 0, 0, 0.25);
+}
+
+.loader::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px dashed#444444;
+  box-shadow: inset -5px -5px 25px rgba(0, 0, 0, 0.25),
+    inset 5px 5px 35px rgba(0, 0, 0, 0.25);
+}
+
+.loader span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+  background: transparent;
+  transform-origin: top left;
+  animation: radar81 2s linear infinite;
+  border-top: 1px dashed #fff;
+}
+
+.loader span::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--lightGreen);
+  transform-origin: top left;
+  transform: rotate(-55deg);
+  filter: blur(30px) drop-shadow(20px 20px 20px var(--green));
+  -webkit-filter: blur(30px) drop-shadow(20px 20px 20px var(--green));
+}
+
+@keyframes radar81 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

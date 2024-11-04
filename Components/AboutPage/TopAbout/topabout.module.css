@@ -1,0 +1,124 @@
+/* top section style */
+.topSection {
+    margin: auto;
+    width: 100%;
+    height: 120vh;
+    /* max-height: 100vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+  .topSection .imageContainer {
+      width: 40%;
+      height: 100%;
+  }
+  .topSection .imageContainer img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 16px;
+      -webkit-border-radius: 16px;
+      -moz-border-radius: 16px;
+      -ms-border-radius: 16px;
+      -o-border-radius: 16px;
+  }
+  
+  .topSection .story h4,
+  .topSection .reliable h4 {
+  font-size: calc(3vw + 10px);
+  font-weight: 400;
+  line-height: 60px;
+  padding-bottom: 30px;
+  }
+  .topSection .story h4 span,
+  .topSection .reliable h4 span {
+  color: var(--green);
+  }
+  .topSection .story p,
+  .topSection .reliable p {
+      font-size: calc(1vw + 5px);
+      font-weight: 400;
+      line-height: 34px;
+  }
+  .topSection .reliable {
+      padding-bottom: calc(5vh + 10px);;
+      position: relative;
+  }
+  .topSection .reliable::after {
+      content: "";
+      position: absolute;
+      width: 70%;
+      height: 3px;
+      background: var(--green);
+      bottom: 0;
+      left: 0;
+      border-radius: 10px;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      -o-border-radius: 10px;
+  }
+  .topSection .story {
+      padding-top: calc(1vh + 10px);
+  }
+  .topSection .paragraph {
+      width: 60%;
+  }
+
+  @media (min-width: 150px) and (max-width: 770px) {
+    /* top section style */
+    .topSection {
+        width: 92%;
+        flex-direction: column;
+        gap: 10px;
+        height: fit-content;
+      }
+      .topSection .imageContainer {
+          width: 100%;
+          height: 100%;
+      }
+      
+      
+      .topSection .story h4,
+      .topSection .reliable h4 {
+      font-size: calc(3vw + 10px);
+      font-weight: 600;
+      line-height: 24px;
+      padding-bottom: 5px;
+      }
+      .topSection .story h4 span,
+      .topSection .reliable h4 span {
+      color: var(--green);
+      }
+      .topSection .story p,
+      .topSection .reliable p {
+          font-size: calc(1vw + 5px);
+          font-weight: 400;
+          line-height: 19px;
+      }
+      .topSection .reliable {
+          padding-bottom: calc(1vh + 10px);;
+          position: relative;
+      }
+      .topSection .reliable::after {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 3px;
+          background: var(--green);
+          bottom: 0;
+          left: 0;
+          border-radius: 10px;
+          -webkit-border-radius: 10px;
+          -moz-border-radius: 10px;
+          -ms-border-radius: 10px;
+          -o-border-radius: 10px;
+      }
+      .topSection .story {
+          padding-top: calc(1vh + 10px);
+      }
+      .topSection .paragraph {
+          width: 100%;
+      }
+    }

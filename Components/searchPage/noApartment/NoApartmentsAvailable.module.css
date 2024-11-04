@@ -1,0 +1,58 @@
+/* NoApartmentsAvailable.module.css */
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(10px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px;
+    border-radius: 8px;
+    color: #333;
+    animation: fadeIn 0.8s ease-in-out;
+  }
+  
+  .icon {
+    font-size: 64px;
+    color: var(--green);
+    margin-bottom: 16px;
+    animation: bounce 1.5s ease-in-out infinite;
+  }
+  
+  .message {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  
+  .subtext {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 20px;
+  }
+  
+  .retryButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: var(--green);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .retryButton:hover {
+    background-color: var(--lightGreen);
+  }
+  

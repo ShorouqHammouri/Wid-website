@@ -1,0 +1,111 @@
+.reviewSubContainer {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  border-bottom: #0000000d 1px solid;
+}
+
+.reviewCard {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 100%;
+  height: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  margin: auto;
+  padding-bottom: 20px;
+  background-color: #fff;
+  box-shadow: 24px 30px 51px 0px #0000000d;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+.reviewCardImg {
+  width: 4vw;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+.reviewCardImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.reviewCardSection {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  height: 100%;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: auto;
+}
+.reviewCardInfo {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 100%;
+  height: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  margin: auto;
+}
+.reviewCardRate {
+  color: #000;
+  font-weight: 600;
+  font-size: clamp(10px, 4vw, 14px);
+}
+.reviewCardText {
+  color: #00000082;
+  font-weight: 400;
+  font-size: clamp(10px, 4vw, 14px);
+}
+.reviewPagination{
+  display: flex;
+  flex-direction: row;
+  gap: 5vw;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #000;
+}
+.reviewPagination button{
+  border: none;
+  background-color: transparent;
+  color: #000;
+  font-size: clamp(10px, 4vw, 14px);
+  font-weight: 600;
+}
+.reviewPagination button:disabled{
+
+  background-color: transparent;
+  color: #3c3c3c7a;
+
+}
+.reviewPagination span {
+  font-size: clamp(10px, 4vw, 14px);
+  font-weight: 600;
+  color: #000;
+}

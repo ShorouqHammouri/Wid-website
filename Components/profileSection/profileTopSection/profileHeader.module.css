@@ -1,0 +1,78 @@
+.profileHeader {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  min-height: 30vh;
+  height: fit-content;
+  margin: auto;
+  gap: 7vw;
+}
+.profilePic {
+  height: clamp(15vw, 4vw, 30vw);
+  min-height: 15vh;
+  width: clamp(15vh, 4vw, 30vh);
+  min-width: 15vw;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.imageFrame {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  padding: 3%;
+  background: var(--green);
+  cursor: pointer;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.imageFrame .cameraIcon {
+  position: absolute;
+  bottom: 4%;
+  right: 4%;
+  font-size: clamp(20px, 4vw, 30px);
+  cursor: pointer;
+  fill: aliceblue;
+  background: var(--green);
+  border: var(--green) 6px solid;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.profilePicForm {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.profilePicForm img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.userName {
+  font-size: clamp(20px, 4vw, 30px);
+  font-weight: 700;
+  line-height: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1vw;
+}

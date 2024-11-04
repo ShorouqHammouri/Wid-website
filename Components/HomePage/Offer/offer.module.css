@@ -1,0 +1,83 @@
+.imageOverlay {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background: linear-gradient(
+      to right,
+      #4f8f92,
+      #4f8f92,
+      #4f8f92,
+      #4f8f9286,
+      #4f8f9200
+    ),
+    url("../../../public/HomePage/homePageMulti.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20vh;
+  margin: auto;
+}
+.contentBox {
+  width: 50%;
+  margin-inline-start: 5vw;
+  text-align: start;
+}
+.imageOverlay .offerTitle {
+  position: relative;
+  font-size: clamp(28px, 4vw, 36px);
+  line-height: clamp(32px, 4vw, 51px);
+  z-index: 2;
+  margin-bottom: 2vh;
+  color: white;
+  font-weight: 700;
+}
+.imageOverlay .offerDesc {
+  position: relative;
+  font-size: clamp(14px, 4vw, 18px);
+  line-height: clamp(22px, 4vw, 28.33px);
+  z-index: 2;
+  margin-bottom: 2vh;
+  color: white;
+  font-weight: 400;
+}
+.imageOverlay .offerBtn {
+  position: relative;
+  z-index: 2;
+  margin-top: 2vh;
+  background-color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: clamp(14px, 4vw, 18px);
+  font-weight: 700;
+  color: var(--green);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+@media (min-width: 150px) and (max-width: 770px) {
+  .imageOverlay {
+    background: linear-gradient(
+        to bottom,
+        #4f8f92,
+        #4f8f92,
+        #4f8f9295,
+        #4f8f9286,
+        #4f8f9200
+      ),
+      url("../../../public/HomePage/homePageMulti.png");
+  }
+  .contentBox {
+    width: 92%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-inline-start: 0vw;
+    margin: auto;
+    text-align: center;
+  }
+}
