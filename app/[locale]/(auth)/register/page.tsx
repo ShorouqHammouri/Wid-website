@@ -1,17 +1,8 @@
-import { BlinkBlur } from "react-loading-indicators";
 import styles from "./register.module.css";
-import dynamic from "next/dynamic";
 import Image from "next/image";
 import registerImage from "@/public/AboutSofa.png";
+import Register from "@/Components/auth/register/Register";
 
-const Register = dynamic(() =>
-  import("@/Components/auth/register/Register", {
-    ssr: false,
-    loading: () => (
-      <BlinkBlur color={"#47b3c5"} size="large" text="loading" textColor="" />
-    ),
-  })
-);
 
 const registerPage = () => {
   return (
