@@ -68,7 +68,7 @@ export default function Reviews(props: Props) {
         );
         setReviews(response.data);
         setLoading(false);
-      } catch (err) {
+      } catch (err : any) {
         setError(`Failed to fetch data: ${err?.message}`);
         setLoading(false);
       }
