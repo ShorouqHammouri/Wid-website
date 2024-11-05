@@ -18,6 +18,7 @@ export default function HeaderLayout({
   cookies: string | any;
 }) {
   const pathname = usePathname();
+console.log("token", token);
 
   const headerRoutes = [
     `/${locale}/login`,
