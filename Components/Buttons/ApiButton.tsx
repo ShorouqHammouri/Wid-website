@@ -28,6 +28,9 @@ const ApiButton = ({
   const locale = useLocale();
 
   useEffect(() => {
+    if (!token) {
+      return;
+    }
     const res = fetch(
       `${process.env.NEXT_PUBLIC_BACKENDAPI}/v1/wishlist/get-wishlist?local=${locale}`,
 
@@ -44,10 +47,13 @@ const ApiButton = ({
       .then((data) => {
         setWished(data);
       });
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [response]);
 
   const handleClick = async () => {
+    if (!token) {
+      return;
+    }
     setLoading(true);
 
     try {

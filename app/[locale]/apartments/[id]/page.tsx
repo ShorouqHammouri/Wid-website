@@ -125,8 +125,7 @@ type History = [
 export default async function ApartmentPageId({
   params: { id },
   searchParams: { start_date, end_date, city, district },
-}: 
-any) {
+}: any) {
   const t = getTranslations("Buttons");
 
   const locale: "en" | "ar" | any = getLocale();
@@ -158,6 +157,7 @@ any) {
 
   const data: Data | null = await fetchData();
   const fetchHistory = async (): Promise<Data | null> => {
+    if (!token) return null;
     try {
       const res = await axios.get(
         `${
@@ -419,9 +419,10 @@ any) {
       <div className={styles.reviewContainer}>
         <div className={styles.reviewHeader}>
           <h4>REVIEWS</h4>
-          {(await history.filter(
-            (item: any) => item.Apartment?.id === data?.data.id
-          ).length) > 0 ? (
+          {(history &&
+            (await history?.filter(
+              (item: any) => item.Apartment?.id === data?.data.id
+            ).length)) > 0 ? (
             <ReviewModal
               method="POST"
               endpoint=""

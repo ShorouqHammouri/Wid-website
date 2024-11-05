@@ -271,7 +271,6 @@ export default function ApartmentsPage({
     }
 
     setLoading(true);
-    console.log(selectedDistrict);
 
     const res = await fetch(
       `${process.env.NEXT_PUBLIC_BACKENDAPI}/v1/search/search-apartments?checkInDate=${selectedStart}&checkOutDate=${selectedEnd}&districtId=${selectedDistrict.id}&locale=${locale}`
