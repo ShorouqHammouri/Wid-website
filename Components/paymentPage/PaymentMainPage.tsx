@@ -138,9 +138,9 @@ export default async function PaymentMainPage({
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const locale: "en" | "ar" | any = getLocale();
 
-  // const cookiez = cookies();
-  // const token = cookiez.get("jwt")?.value;
-  const token = process.env.NEXT_PUBLIC_TESTTOKEN;
+  const cookiez = cookies();
+  const token = cookiez.get("jwt")?.value;
+  // const token = process.env.NEXT_PUBLIC_TESTTOKEN;
 
   async function formatDate(dateString: string) {
     const options: { weekday: string; month: string; day: string } | any = {

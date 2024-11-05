@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-"use client"; // This ensures that the component runs in the client environment
+"use client"; 
 
 import { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
@@ -56,7 +56,7 @@ const Register = () => {
         data
       );
 
-      if (response.status === 201) {
+      if (response.status >= 200 && response.status < 300) {
         router.push("/login");
       }
     } catch (error) {

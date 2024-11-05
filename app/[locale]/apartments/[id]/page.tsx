@@ -9,7 +9,7 @@ import { CiHeart } from "react-icons/ci";
 import { getLocale, getTranslations } from "next-intl/server";
 import dynamic from "next/dynamic";
 import { OrbitProgress } from "react-loading-indicators";
-// import { cookies } from "next/headers";
+import { cookies } from "next/headers";
 const ApiButton = dynamic(() => import("@/Components/Buttons/ApiButton"), {
   ssr: false,
 });
@@ -131,9 +131,9 @@ any) {
 
   const locale: "en" | "ar" | any = getLocale();
 
-  // const cookiez = cookies();
-  // const token = cookiez.get("jwt")?.value;
-  const token = process.env.NEXT_PUBLIC_TESTTOKEN;
+  const cookiez = cookies();
+  const token = cookiez.get("jwt")?.value;
+  // const token = process.env.NEXT_PUBLIC_TESTTOKEN;
   // Fetch data (SSR)
 
   const fetchData = async (): Promise<Data | null> => {

@@ -28,9 +28,9 @@ export default function ProfileBtn(props: Props) {
     setIsOpen(!isOpen);
   };
   const handleLogout = async () => {
-    console.log(cookies);
+    // console.log(cookies);
     
-    // cookies.delete("jwt");
+    cookies.delete("jwt");
   };
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {

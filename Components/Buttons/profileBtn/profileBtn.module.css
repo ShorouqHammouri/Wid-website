@@ -34,6 +34,7 @@
   background: #fff;
   width: 20vw;
   height: 22vh;
+  min-height: 461px;
   border-radius: 6px;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
