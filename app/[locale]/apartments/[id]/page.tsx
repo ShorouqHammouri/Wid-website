@@ -130,7 +130,7 @@ export default async function ApartmentPageId({
 
   const locale: "en" | "ar" | any = getLocale();
 
-  const cookiez = cookies();
+  const cookiez = await cookies();
   const token = cookiez.get("jwt")?.value;
   // const token = process.env.NEXT_PUBLIC_TESTTOKEN;
   // Fetch data (SSR)

@@ -20,8 +20,8 @@ type Data = {
   phoneNumber: string;
 };
 export default async function profilePage() {
-  const cookiez = cookies();
-  const token = cookiez.get("jwt")?.value;
+  const cookiez = await cookies();
+  const token = await cookiez.get("jwt")?.value;
   // const token = process.env.NEXT_PUBLIC_TESTTOKEN;
   const getProfileData = async () => {
     const res = await axios.get(

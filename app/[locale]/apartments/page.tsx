@@ -25,12 +25,12 @@ interface SearchParams {
   district?: string;
 }
 
-export default function ApartmentPage({
+export default async function ApartmentPage({
   searchParams,
 }: {
   searchParams: SearchParams;
 }) {
-  const cookiez = cookies();
+  const cookiez = await cookies();
   const token = cookiez.get("jwt")?.value;
   // const token = process.env.NEXT_PUBLIC_TESTTOKEN;
   const { start_date, end_date, city, district } = searchParams || {};
